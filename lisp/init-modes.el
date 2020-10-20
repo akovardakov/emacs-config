@@ -14,8 +14,7 @@
   :ensure t
   :init
   (elpy-enable)
-  :config
-  (setq python-python-command "/usr/local/opt/python@3.8/bin/python3")
+  (setq elpy-rpc-backend "jedi")
   )
 
 (use-package cython-mode
