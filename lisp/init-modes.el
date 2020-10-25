@@ -6,9 +6,9 @@
   :ensure t
   :diminish t
   :config
+  (setq undo-tree-auto-save-history t)
   (global-undo-tree-mode)
   (evil-set-undo-system 'undo-tree)
-  (setq undo-tree-auto-save-history t)
   (setq undo-tree-history-directory-alist
         (list (cons "." (expand-file-name "undo-tree-history" user-emacs-directory)))))
 
